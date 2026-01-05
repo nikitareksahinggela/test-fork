@@ -1,0 +1,423 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: powershell.exe
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: C:\Users\ADVAN
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 120
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 30
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Terminalizer
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 546
+    content: "\e[?9001h\e[?1004h"
+  - delay: 214
+    content: "\e[?25l\e[2J\e[m\e[HWindows PowerShell\r\nCopyright (C) Microsoft Corporation. All rights reserved.\e[4;1HInstall the latest PowerShell for new features and improvements! https://aka.ms/PSWindows\e]0;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\a\e[?25h"
+  - delay: 12
+    content: "\e[?25l\e[6;1H\e[?25h"
+  - delay: 764
+    content: 'PS C:\Users\ADVAN> '
+  - delay: 26469
+    content: "\e[?25l"
+  - delay: 12
+    content: "\e[91m\e[6;18H> \e[37m&\e[?25h"
+  - delay: 2260
+    content: "\e[m\e[?25l"
+  - delay: 20
+    content: "\e[37m\b& \e[?25h"
+  - delay: 908
+    content: "\e[m\e[?25l"
+  - delay: 9
+    content: "\e[37m\e[6;20H& \e[36m'\e[?25h"
+  - delay: 576
+    content: "\e[m\e[?25l"
+  - delay: 24
+    content: "\e[37m\e[6;20H& \e[36m'c\e[?25h"
+  - delay: 1840
+    content: "\e[m\e[?25l"
+  - delay: 22
+    content: "\e[37m\e[6;20H& \e[36m' \b\e[?25h"
+  - delay: 649
+    content: "\e[m\e[?25l"
+  - delay: 17
+    content: "\e[6;18H> \e[37m& \e[36m''\e[?25h"
+  - delay: 1002
+    content: "\e[m\e[?25l"
+  - delay: 12
+    content: "\e[91m\e[6;18H> \e[37m& \e[36m' \b\e[?25h"
+  - delay: 282
+    content: "\e[m\e[?25l"
+  - delay: 20
+    content: "\e[37m\e[6;20H&  \b\e[?25h"
+  - delay: 2586
+    content: "\e[m\e[?25l"
+  - delay: 11
+    content: "\e[37m\e[6;20H& \b\e[?25h"
+  - delay: 1221
+    content: "\e[m\e[?25l"
+  - delay: 10
+    content: "\e[37m\b& \e[?25h"
+  - delay: 486
+    content: "\e[m\e[?25l"
+  - delay: 11
+    content: "\e[37m\e[6;20H& \e[36m\"\e[?25h"
+  - delay: 2910
+    content: "\e[m\e[?25l"
+  - delay: 25
+    content: "\e[37m\e[6;20H& \e[36m\"C\e[?25h"
+  - delay: 1283
+    content: "\e[m\e[?25l"
+  - delay: 18
+    content: "\e[37m\e[6;20H& \e[36m\"C:\e[?25h"
+  - delay: 5972
+    content: "\e[m\e[?25l"
+  - delay: 19
+    content: "\e[37m\e[6;20H& \e[36m\"C:\\\e[?25h"
+  - delay: 1266
+    content: "\e[m\e[?25l"
+  - delay: 11
+    content: "\e[37m\e[6;20H& \e[36m\"C:\\P\e[?25h"
+  - delay: 681
+    content: "\e[m\e[?25l"
+  - delay: 10
+    content: "\e[37m\e[6;20H& \e[36m\"C:\\Pr\e[?25h"
+  - delay: 980
+    content: "\e[m\e[?25l"
+  - delay: 18
+    content: "\e[37m\e[6;20H& \e[36m\"C:\\Pro\e[?25h"
+  - delay: 949
+    content: "\e[m\e[?25l"
+  - delay: 11
+    content: "\e[37m\e[6;20H& \e[36m\"C:\\Prog\e[?25h"
+  - delay: 293
+    content: "\e[m\e[?25l"
+  - delay: 12
+    content: "\e[37m\e[6;20H& \e[36m\"C:\\Progr\e[?25h"
+  - delay: 287
+    content: "\e[m\e[?25l"
+  - delay: 11
+    content: "\e[37m\e[6;20H& \e[36m\"C:\\Progra\e[?25h"
+  - delay: 309
+    content: "\e[m\e[?25l"
+  - delay: 24
+    content: "\e[37m\e[6;20H& \e[36m\"C:\\Program\e[?25h"
+  - delay: 5278
+    content: "\e[m\e[?25l"
+  - delay: 18
+    content: "\e[37m\e[6;20H& \e[36m\"C:\\Program \e[?25h"
+  - delay: 459
+    content: "\e[m\e[?25l"
+  - delay: 21
+    content: "\e[37m\e[6;20H& \e[36m\"C:\\Program F\e[?25h"
+  - delay: 453
+    content: "\e[m\e[?25l"
+  - delay: 15
+    content: "\e[37m\e[6;20H& \e[36m\"C:\\Program Fi\e[?25h"
+  - delay: 203
+    content: "\e[m\e[?25l"
+  - delay: 14
+    content: "\e[37m\e[6;20H& \e[36m\"C:\\Program Fil\e[?25h"
+  - delay: 164
+    content: "\e[m\e[?25l"
+  - delay: 24
+    content: "\e[37m\e[6;20H& \e[36m\"C:\\Program File\e[?25h"
+  - delay: 253
+    content: "\e[m\e[?25l"
+  - delay: 20
+    content: "\e[37m\e[6;20H& \e[36m\"C:\\Program Files\e[?25h"
+  - delay: 2300
+    content: "\e[m\e[?25l"
+  - delay: 14
+    content: "\e[37m\e[6;20H& \e[36m\"C:\\Program Files\\\e[?25h"
+  - delay: 556
+    content: "\e[m\e[?25l"
+  - delay: 11
+    content: "\e[37m\e[6;20H& \e[36m\"C:\\Program Files\\M\e[?25h"
+  - delay: 839
+    content: "\e[m\e[?25l"
+  - delay: 11
+    content: "\e[37m\e[6;20H& \e[36m\"C:\\Program Files\\Ma\e[?25h"
+  - delay: 627
+    content: "\e[m\e[?25l"
+  - delay: 19
+    content: "\e[37m\e[6;20H& \e[36m\"C:\\Program Files\\Mar\e[?25h"
+  - delay: 205
+    content: "\e[m\e[?25l"
+  - delay: 14
+    content: "\e[37m\e[6;20H& \e[36m\"C:\\Program Files\\Mari\e[?25h"
+  - delay: 281
+    content: "\e[m\e[?25l"
+  - delay: 22
+    content: "\e[37m\e[6;20H& \e[36m\"C:\\Program Files\\Maria\e[?25h"
+  - delay: 3424
+    content: "\e[m\e[?25l"
+  - delay: 23
+    content: "\e[37m\e[6;20H& \e[36m\"C:\\Program Files\\MariaD\e[?25h"
+  - delay: 528
+    content: "\e[m\e[?25l"
+  - delay: 13
+    content: "\e[37m\e[6;20H& \e[36m\"C:\\Program Files\\MariaDB\e[?25h"
+  - delay: 1829
+    content: "\e[m\e[?25l"
+  - delay: 11
+    content: "\e[37m\e[6;20H& \e[36m\"C:\\Program Files\\MariaDB \e[?25h"
+  - delay: 1314
+    content: "\e[m\e[?25l"
+  - delay: 21
+    content: "\e[37m\e[6;20H& \e[36m\"C:\\Program Files\\MariaDB 1\e[?25h"
+  - delay: 271
+    content: "\e[m\e[?25l"
+  - delay: 21
+    content: "\e[37m\e[6;20H& \e[36m\"C:\\Program Files\\MariaDB 12\e[?25h"
+  - delay: 1623
+    content: "\e[m\e[?25l"
+  - delay: 11
+    content: "\e[37m\e[6;20H& \e[36m\"C:\\Program Files\\MariaDB 12.\e[?25h"
+  - delay: 2004
+    content: "\e[m\e[?25l"
+  - delay: 20
+    content: "\e[37m\e[6;20H& \e[36m\"C:\\Program Files\\MariaDB 12.0\e[?25h"
+  - delay: 2439
+    content: "\e[m\e[?25l"
+  - delay: 19
+    content: "\e[37m\e[6;20H& \e[36m\"C:\\Program Files\\MariaDB 12.0\\\e[?25h"
+  - delay: 1213
+    content: "\e[m\e[?25l"
+  - delay: 13
+    content: "\e[37m\e[6;20H& \e[36m\"C:\\Program Files\\MariaDB 12.0\\m\e[?25h"
+  - delay: 408
+    content: "\e[m\e[?25l"
+  - delay: 10
+    content: "\e[37m\e[6;20H& \e[36m\"C:\\Program Files\\MariaDB 12.0\\my\e[?25h"
+  - delay: 827
+    content: "\e[m\e[?25l"
+  - delay: 18
+    content: "\e[37m\e[6;20H& \e[36m\"C:\\Program Files\\MariaDB 12.0\\mys\e[?25h"
+  - delay: 230
+    content: "\e[m\e[?25l"
+  - delay: 10
+    content: "\e[37m\e[6;20H& \e[36m\"C:\\Program Files\\MariaDB 12.0\\mysq\e[?25h"
+  - delay: 254
+    content: "\e[m\e[?25l"
+  - delay: 9
+    content: "\e[37m\e[6;20H& \e[36m\"C:\\Program Files\\MariaDB 12.0\\mysql\e[?25h"
+  - delay: 3940
+    content: "\e[m\e[?25l"
+  - delay: 22
+    content: "\e[37m\e[6;20H& \e[36m\"C:\\Program Files\\MariaDB 12.0\\mysql.\e[?25h"
+  - delay: 421
+    content: "\e[m\e[?25l"
+  - delay: 24
+    content: "\e[37m\e[6;20H& \e[36m\"C:\\Program Files\\MariaDB 12.0\\mysql.e\e[?25h"
+  - delay: 596
+    content: "\e[m\e[?25l"
+  - delay: 11
+    content: "\e[37m\e[6;20H& \e[36m\"C:\\Program Files\\MariaDB 12.0\\mysql.ex\e[?25h"
+  - delay: 702
+    content: "\e[m\e[?25l"
+  - delay: 11
+    content: "\e[37m\e[6;20H& \e[36m\"C:\\Program Files\\MariaDB 12.0\\mysql.exe\e[?25h"
+  - delay: 1573
+    content: "\e[m\e[?25l"
+  - delay: 11
+    content: "\e[6;18H> \e[37m& \e[36m\"C:\\Program Files\\MariaDB 12.0\\mysql.exe\"\e[?25h"
+  - delay: 561
+    content: "\e[m\e[?25l"
+  - delay: 18
+    content: "\e[37m\e[6;20H& \e[36m\"C:\\Program Files\\MariaDB 12.0\\mysql.exe\" \e[?25h"
+  - delay: 362
+    content: "\e[m\e[?25l"
+  - delay: 9
+    content: "\e[37m\e[6;20H& \e[36m\"C:\\Program Files\\MariaDB 12.0\\mysql.exe\" \e[37mr\e[?25h"
+  - delay: 393
+    content: "\e[m\e[?25l"
+  - delay: 18
+    content: "\e[37m\e[6;20H& \e[36m\"C:\\Program Files\\MariaDB 12.0\\mysql.exe\" \e[37mro\e[?25h"
+  - delay: 205
+    content: "\e[m\e[?25l"
+  - delay: 17
+    content: "\e[37m\e[6;20H& \e[36m\"C:\\Program Files\\MariaDB 12.0\\mysql.exe\" \e[37mroo\e[?25h"
+  - delay: 993
+    content: "\e[m\e[?25l"
+  - delay: 24
+    content: "\e[37m\e[6;20H& \e[36m\"C:\\Program Files\\MariaDB 12.0\\mysql.exe\" \e[37mro \b\e[?25h"
+  - delay: 169
+    content: "\e[m\e[?25l"
+  - delay: 18
+    content: "\e[37m\e[6;20H& \e[36m\"C:\\Program Files\\MariaDB 12.0\\mysql.exe\" \e[37mr \b\e[?25h"
+  - delay: 163
+    content: "\e[m\e[?25l"
+  - delay: 13
+    content: "\e[37m\e[6;20H& \e[36m\"C:\\Program Files\\MariaDB 12.0\\mysql.exe\"  \b\e[?25h"
+  - delay: 1918
+    content: "\e[m\e[?25l"
+  - delay: 13
+    content: "\e[37m\e[6;20H& \e[36m\"C:\\Program Files\\MariaDB 12.0\\mysql.exe\" \e[37m-\e[?25h"
+  - delay: 538
+    content: "\e[m\e[?25l"
+  - delay: 16
+    content: "\e[37m\e[6;20H& \e[36m\"C:\\Program Files\\MariaDB 12.0\\mysql.exe\" \e[90m-u\e[?25h"
+  - delay: 280
+    content: "\e[m\e[?25l"
+  - delay: 18
+    content: "\e[37m\e[6;20H& \e[36m\"C:\\Program Files\\MariaDB 12.0\\mysql.exe\" \e[90m-u \e[?25h"
+  - delay: 952
+    content: "\e[m\e[?25l"
+  - delay: 25
+    content: "\e[37m\e[6;20H& \e[36m\"C:\\Program Files\\MariaDB 12.0\\mysql.exe\" \e[90m-u \e[37mr\e[?25h"
+  - delay: 263
+    content: "\e[m\e[?25l"
+  - delay: 22
+    content: "\e[37m\e[6;20H& \e[36m\"C:\\Program Files\\MariaDB 12.0\\mysql.exe\" \e[90m-u \e[37mro\e[?25h"
+  - delay: 142
+    content: "\e[m\e[?25l"
+  - delay: 9
+    content: "\e[37m\e[6;20H& \e[36m\"C:\\Program Files\\MariaDB 12.0\\mysql.exe\" \e[90m-u \e[37mroo\e[?25h"
+  - delay: 802
+    content: "\e[m\e[?25l"
+  - delay: 14
+    content: "\e[37m\e[6;20H& \e[36m\"C:\\Program Files\\MariaDB 12.0\\mysql.exe\" \e[90m-u \e[37mroot\e[?25h"
+  - delay: 2674
+    content: "\e[m\e[?25l"
+  - delay: 21
+    content: "\e[37m\e[6;20H& \e[36m\"C:\\Program Files\\MariaDB 12.0\\mysql.exe\" \e[90m-u \e[37mroot \e[?25h"
+  - delay: 418
+    content: "\e[m\e[?25l"
+  - delay: 13
+    content: "\e[37m\e[6;20H& \e[36m\"C:\\Program Files\\MariaDB 12.0\\mysql.exe\" \e[90m-u \e[37mroot -\e[?25h"
+  - delay: 2359
+    content: "\e[m\e[?25l"
+  - delay: 12
+    content: "\e[37m\e[6;20H& \e[36m\"C:\\Program Files\\MariaDB 12.0\\mysql.exe\" \e[90m-u \e[37mroot \e[90m-p\e[?25h"
+  - delay: 2569
+    content: "\e[m"
+  - delay: 9
+    content: "\r\n"
+  - delay: 504
+    content: "\e[38;5;9m& : The term 'C:\\Program Files\\MariaDB 12.0\\mysql.exe' is not recognized as the name of a cmdlet, function, script "
+  - delay: 17
+    content: "\e[m\e[38;5;9m\r\nfile, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct \r\nand try again.\r\nAt line:1 char:3\r\n+ & \"C:\\Program Files\\MariaDB 12.0\\mysql.exe\" -u root -p\r\n+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : ObjectNotFound: (C:\\Program Files\\MariaDB 12.0\\mysql.exe:String) [], CommandNotFoundExce \r\n   ption\r\n    + FullyQualifiedErrorId : CommandNotFoundException\r\n \r\n"
+  - delay: 90
+    content: "\e[mPS C:\\Users\\ADVAN> "
+  - delay: 10047
+    content: "\e[?25l"
+  - delay: 24
+    content: "\e[93me\e[?25h"
+  - delay: 358
+    content: "\e[m\e[?25l"
+  - delay: 17
+    content: "\e[93m\bex\e[?25h"
+  - delay: 666
+    content: "\e[m\e[?25l"
+  - delay: 12
+    content: "\e[93m\e[17;20Hexi\e[?25h"
+  - delay: 427
+    content: "\e[m\e[?25l"
+  - delay: 11
+    content: "\e[92m\e[17;20Hexit\e[?25h"
+  - delay: 6132
+    content: "\e[m"
+  - delay: 11
+    content: "\r\n"
